@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Hello Vite!</h1>
+      <!-- Display user's email if logged in -->
+      <h3 id="user"></h3>
+      <!-- Form to sign up, sign in, or logout depending on user session -->
+      <form id="sign_up_form">
+        <input type="text" id="signup-email" placeholder="Email" />
+        <input type="password" id="signup-password" placeholder="Password" />
+        <input type="password" id="signup-password-confirm" placeholder="Confirm Password" />
+        <button type="submit" id="Sign Up">Submit</button>
+      </form>
+
+      <form id="sign_in_form">
+        <input type="text" id="signin-email" placeholder="Email" />
+        <input type="password" id="signin-password" placeholder="Password" />
+        <button type="submit" id="Login">Submit</button>
+      </form>
+
+      <!-- Display logout if logged in -->
+      <button id="sign_out">Logout</button>
+
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
